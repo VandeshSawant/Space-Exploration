@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Objects in Space</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- Fade overlay for opening animation -->
+    <div id="fade-overlay"></div>
+
+    <div id="canvas-container"></div>
+    
+    <div id="ui">
+        <div>Objects: <span id="object-count">0</span></div>
+        <div>Scroll: <span id="scroll-progress">0%</span></div>
+        <div>Speed: <span id="scroll-speed">1.0x</span></div>
+        <div>Hovered: <span id="hovered-object">None</span></div>
+    </div>
+
+    <div id="instructions">
+        <strong>Controls:</strong><br>
+        • Move mouse to control camera<br>
+        • Hover objects to change color<br>
+        • Scroll through content<br>
+        • Press "R" to navigate to the top
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="scroll-bar">
+            <div class="scroll-progress" id="scroll-progress-bar"></div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="section">
+            <div class="content-box">
+                <h1>SPACE EXPLORATION</h1>
+                <p>Welcome to the interactive 3D space environment. Navigate through this cosmic journey as wireframe objects float around you in the vast darkness of space.</p>
+                <p class="highlight">Scroll down to begin your journey through the digital cosmos.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-box">
+                <h2>Geometric Entities</h2>
+                <p>Each floating object represents a different geometric form - cubes, pyramids, spheres, and more complex polyhedra drift through this virtual space.</p>
+                <p>Watch as they respond to your presence, changing colors when you <span class="highlight">hover over them</span> with your cursor.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-box">
+                <h2>Interactive Universe</h2>
+                <p>The camera follows your mouse movements, creating a dynamic viewing experience. The objects continuously rotate and float with subtle animations.</p>
+                <p>As you scroll, notice how the objects <span class="highlight">move closer to the camera</span>, creating depth and immersion.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-box">
+                <h2>Digital Aesthetics</h2>
+                <p>The wireframe aesthetic pays homage to early computer graphics and vector displays. Each object maintains its structural beauty through minimal line representation.</p>
+                <p>Colors shift from pure white to vibrant hues when <span class="highlight">interaction occurs</span>.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-box">
+                <h2>Spatial Dynamics</h2>
+                <p>The three-dimensional space creates depth through perspective, lighting, and movement. Objects exist at various distances, creating layers of visual interest.</p>
+                <p>Scroll behavior affects both <span class="highlight">rotation speed and positioning</span> of all entities.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-box">
+                <h2>Journey's End</h2>
+                <p>You've traveled through the digital cosmos, observing the dance of geometric forms in virtual space.</p>
+                <p class="highlight">Scroll back up to experience the reverse journey, or Press "R" to navigate to the top.</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
